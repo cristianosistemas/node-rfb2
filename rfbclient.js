@@ -276,7 +276,7 @@ RfbClient.prototype.readFbUpdate = function()
             if (numRectsLeft == 0)
             {
                 cli.expectNewMessage();
-                cli.requestUpdate(true, 0, 0, cli.width, cli.height);
+                cli.requestUpdate(false, 0, 0, cli.width, cli.height);
                 return;
             }
             numRectsLeft--;
